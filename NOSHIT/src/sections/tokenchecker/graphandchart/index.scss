@@ -1,0 +1,35 @@
+.graphandchart {
+  a {
+    width: 45%;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: var(--primary-effect);
+  }
+  button {
+    width: 200px;
+    margin: auto;
+    color: var(--primary);
+    padding: 5px;
+  }
+  .rest-shew {
+    position: relative;
+    svg {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: -25px;
+      animation: moving-down 0.5s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes moving-down {
+  0% {
+    bottom: -22px;
+  }
+  100% {
+    bottom: -30px;
+  }
+}

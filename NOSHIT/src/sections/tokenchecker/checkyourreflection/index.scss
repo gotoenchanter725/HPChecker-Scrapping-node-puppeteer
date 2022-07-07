@@ -1,0 +1,18 @@
+.checkyourreflection-container {
+    a {
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+    a:hover {
+        color: var(--primary);
+    }
+    .contract-address {
+        margin: 20px 0px;
+        .input-container {
+            width: calc(100% - 160px);
+        }
+    }
+    label {
+        color: var(--primary-title);;
+    }
+}

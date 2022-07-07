@@ -1,0 +1,89 @@
+.tokencheck-container {
+  h2 {
+    margin-right: 20px;
+    font-size: 32px;
+    background-clip: text;
+    background-image: linear-gradient(75deg, rgb(95, 235, 2), rgb(37, 82, 31));
+    color: transparent;
+  }
+  padding: 50px 0px;
+  width: 100%;
+  .address-wrap {
+    position: relative;
+    #token {
+      width: 400px;
+    }
+    .error {
+      position: absolute;
+      bottom: -24px;
+      font-size: 12px;
+      color: var(--error);
+      left: 130px;
+    }
+  }
+  .netType-wrap {
+    color: white;
+    fieldset {
+      border-color: var(--primary) !important;
+      // background-color: var(--primary);
+      top: 0px;
+      legend {
+        display: none !important;
+      }
+    }
+    label {
+      color: white;
+    }
+
+    #demo-simple-select-autowidth {
+      padding: 5px 0px 5px 10px;
+      color: var(--primary);
+      font-size: 14px;
+    }
+    #demo-simple-select-autowidth-label {
+      line-height: 10px;
+      font-size: 10px;
+    }
+    svg {
+      color: var(--primary) !important;
+    }
+  }
+  .btn-wrap {
+    a {
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      span {
+        color: var(--primary) !important;
+      }
+    }
+    svg {
+      color: var(--primary) !important;
+    }
+  }
+}
+.MuiList-root.MuiMenu-list {
+  background-color: var(--primary);
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .tokencheck-container {
+    padding-bottom: 20px;
+    h2 {
+      margin-right: 0px;
+    }
+    .address-wrap #token {
+      width: 200px;
+    }
+    .btn-wrap {
+      margin-top: 20px;
+    }
+    .sm-mb {
+      margin-top: 40px;
+    }
+    .netType-wrap {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.checklist-container {
+    .address-wrap {
+        width: 60%;
+        img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        >div {
+            margin: 10px 0px;
+        }
+        .input-container {
+            width: 100%;
+            min-width: 200px;
+            margin-right: 20px;
+        }
+
+        label {
+            min-width: 140px;
+            color: var(--primary-title);;
+        }
+        p {
+            text-align: center;
+            margin: 10px 0px;
+        }
+    }
+    .result-wrap {
+        width: calc(40% - 20px);
+        p {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        Button {
+            width: 100px;
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .normal-card h3 {
+        font-size: 14px!important;
+    }
+    .address-wrap {
+        width: 100% !important;
+    }
+    .result-wrap {
+        width: 100% !important;
+        .custom-btn.submit {
+            margin-top: 15px!important;
+        }
+    }
+}

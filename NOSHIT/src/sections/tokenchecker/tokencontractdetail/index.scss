@@ -1,0 +1,58 @@
+.tokencontract-container {
+    .detail {
+        align-items: center;
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            padding: 5px;
+            display: inline-block;
+            margin: 5px 0px;
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        .loading {
+            width: 30px;
+            height: 30px;
+        }
+
+        a {
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-effect);
+        }
+    }
+
+    .holders-table {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        border: 1px solid var(--primary-effect);
+    }
+}
+
+table {
+    tr {
+        border: none;
+
+        td,
+        th {
+            border: none !important;
+            border-top: 1px solid var(--primary-effect) !important;
+            color: white !important;
+            padding: 10px !important;
+            padding-left: 15px !important;
+            text-align: center !important;
+        }
+
+        th {
+            border: none !important;
+            background-color: #041a01 !important;
+        }
+    }
+}

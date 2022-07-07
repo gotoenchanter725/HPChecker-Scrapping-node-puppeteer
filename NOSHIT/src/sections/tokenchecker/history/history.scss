@@ -1,0 +1,91 @@
+.history-container {
+    box-shadow: 0px 25px 100px -59px rgb(38 239 13 / 50%);
+    margin-bottom: 50px;
+    
+    >div {
+        border: 1px solid var(--primary-effect);
+    }
+
+    table {
+        border-bottom: 1px solid var(--primary-effect);
+
+        tbody {
+            background-image: url("../../../assets/image/table_bg.jpg");
+            background-color: rgba(0, 0, 0, 1.0) !important;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+    .MuiTablePagination-root {
+        background-color: transparent !important;
+
+        .MuiToolbar-root {
+            min-height: 40px !important;
+
+            >p {
+                // display: none;
+            }
+
+            .MuiInputBase-root {
+                .MuiTablePagination-select {
+                    color: white !important;
+                }
+
+                svg {
+                    color: white !important;
+                }
+            }
+
+            .MuiTablePagination-actions {
+                button svg {
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+    h3 {
+        margin-left: 20px;
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        line-height: 20px !important;
+        text-shadow: 2px 2px 1px var(--primary);
+        display: inline-block;
+        background-color: var(--primary);
+        color: white;
+        padding: 8px 12px 6px 12px;
+        position: relative;
+    }
+
+    h3::after {
+        content: " ";
+        position: absolute;
+        left: -14px;
+        bottom: 0px;
+        width: 0px;
+        height: 0px;
+        border-width: 7px;
+        border-style: solid;
+        border-color: transparent var(--primary-dark) var(--primary-dark) transparent;
+    }
+
+    .title {
+        position: relative;
+        .back {
+            position: absolute;
+            left: -60px;
+            top: -5px;
+            svg {
+                color: var(--primary)!important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .history-container h3 {
+        font-size: 14px !important;
+    }
+}
